@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/*Navigation Bar Styling*/
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    background: #6BAA75;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .logo a{
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+.navbar .menu li a{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Home Section Styling*/
+.home{
+    display: flex;
+    background: #2F2D2E;
+    height: 100vh;
+    color: #FFFFFF;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 35px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
