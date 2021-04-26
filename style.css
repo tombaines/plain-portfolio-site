@@ -12,13 +12,21 @@
 }
 
 /*Navigation Bar Styling*/
+/*Navigation Bar Styling*/
+/*Navigation Bar Styling*/
 
 .navbar{
     position: fixed;
     width: 100%;
-    padding: 15px 0;
+    padding: 40px 0;
     background: #6BAA75;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky{
+    padding: 15px 0;
+    background: #6BAA75;
 }
 
 .navbar .logo a{
@@ -28,11 +36,14 @@
 
 }
 
+
+
 .navbar .menu li a{
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
 }
 
 .navbar .menu li{
@@ -46,7 +57,15 @@
     justify-content: space-between;
 }
 
+.navbar .menu li a:hover{
+    color: #2F2D2E;
+}
+
 /*Home Section Styling*/
+/*Home Section Styling*/
+/*Home Section Styling*/
+
+
 .home{
     display: flex;
     background: #2F2D2E;
@@ -74,3 +93,13 @@
     font-size: 40px;
     margin: 5px 0;
 }
+
+/*About Section Styling*/
+
+/*CV Section Styling*/
+
+/*Projects Section Styling*/
+
+/*Skills Section Styling*/
+
+/*Contact Section Styling*/
