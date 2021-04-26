@@ -19,7 +19,6 @@
     position: fixed;
     width: 100%;
     padding: 40px 0;
-    background: #6BAA75;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -37,7 +36,6 @@
 }
 
 
-
 .navbar .menu li a{
     color: #FFFFFF;
     font-size: 18px;
@@ -51,6 +49,10 @@
     display: inline-block;
 }
 
+.navbar.sticky .menu li a:hover{
+    color: #2F2D2E;
+}
+
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -58,8 +60,16 @@
 }
 
 .navbar .menu li a:hover{
-    color: #2F2D2E;
+    color: #6BAA75;
 }
+/*Menu Button Styling*/
+.menu-btn{
+    color:#FFFFFF;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
 
 /*Home Section Styling*/
 /*Home Section Styling*/
@@ -94,12 +104,62 @@
     margin: 5px 0;
 }
 
+/*Responsive Media*/
+@media (max-width: 900px){
+    .max-width{
+        padding: 0 40px;
+    }
+    
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        background: #111;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;    
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+    }
+
+
+}
+
+
+/*About Section Styling*/
+/*About Section Styling*/
 /*About Section Styling*/
 
 /*CV Section Styling*/
+/*CV Section Styling*/
+/*CV Section Styling*/
 
+/*Projects Section Styling*/
+/*Projects Section Styling*/
 /*Projects Section Styling*/
 
 /*Skills Section Styling*/
+/*Skills Section Styling*/
+/*Skills Section Styling*/
 
+/*Contact Section Styling*/
+/*Contact Section Styling*/
 /*Contact Section Styling*/

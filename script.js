@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //STICKY NAV BAR SCRIPT
     $(window).scroll(function(){
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
@@ -7,4 +8,9 @@ $(document).ready(function(){
         }
     })
 
-});
+    //TOGGLE MENU SCRIPT
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+    })
+
+})
