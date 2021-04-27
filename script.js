@@ -7,10 +7,17 @@ $(document).ready(function(){
             $('.navbar').removeClass("sticky");
         }
     })
-
+    var i = 0;
     //TOGGLE MENU SCRIPT
     $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
+        if(i==0){
+            $('.navbar .menu').addClass("active")
+            i=1;
+        } else{
+            $('.navbar .menu').removeClass("active");
+            i=0;
+        }
+        
     })
 
 })

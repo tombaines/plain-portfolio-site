@@ -60,7 +60,7 @@
 }
 
 .navbar .menu li a:hover{
-    color: #6BAA75;
+    color: #F2A541;
 }
 /*Menu Button Styling*/
 .menu-btn{
@@ -105,14 +105,14 @@
 }
 
 /*Responsive Media*/
-@media (max-width: 900px){
-    .max-width{
-        padding: 0 40px;
-    }
-    
+@media (max-width: 947px){
     .menu-btn{
         display: block;
         z-index: 999;
+    }
+    
+    .max-width{
+        padding: 0 50px;
     }
 
     .navbar .menu{
@@ -138,6 +138,7 @@
     .navbar .menu li a{
         display: inline-block;
         margin: 20px 0;
+        font-size: 25px;
     }
 
 
