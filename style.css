@@ -105,45 +105,6 @@
     margin: 5px 0;
 }
 
-/*Responsive Media*/
-@media (max-width: 947px){
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
-    
-    .max-width{
-        padding: 0 50px;
-    }
-
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        background: #111;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;    
-    }
-
-    .navbar .menu.active{
-        left: 0;
-    }
-
-    .navbar .menu li{
-        display: block;
-    }
-
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-
-
-}
 
 
 /*About Section Styling*/
@@ -190,6 +151,7 @@ section{
     display: inline-block;
     background-color: #6BAA75;
     color: #FFFFFF;
+    font-weight: 500px;
     font-size: 30px;
     padding: 10px 30px;
     margin-top: 20px;
@@ -212,6 +174,8 @@ section{
     border-radius: 6px;
 }
 
+
+
 /*CV Section Styling*/
 /*CV Section Styling*/
 /*CV Section Styling*/
@@ -227,3 +191,82 @@ section{
 /*Contact Section Styling*/
 /*Contact Section Styling*/
 /*Contact Section Styling*/
+
+
+/*Responsive Media*/
+
+@media (.max-width: 1104px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (.max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (.max-width: 991px){
+    .home .max-width{
+        margin-left: 0 50px;
+    }
+}
+
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        background: #111;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;    
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+
+.max-width{
+    max-width: 800px;
+}
+
+.about .about-content .column{
+    width: 100%;
+}
+
+.about .about-content .left{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+}
+
+.about .about-content .right{
+    flex: 100%;
+}
+
+
+}
